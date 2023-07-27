@@ -5,16 +5,16 @@ import { Grid } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <Grid container spacing={2} style={{ margin: 0 }}>
-        <Grid item xs={6} and md={3}>
-          <LeftPanel/>
+      <div className="App">
+        <Grid container spacing={2} style={{ margin: 0 }}>
+          <Grid item xs={6}  md={3}>
+            <LeftPanel />
+          </Grid>
+          <Grid item xs={6}  md={9}>
+            <MainPanel />
+          </Grid>
         </Grid>
-        <Grid item xs={6} and md={9}>
-          <MainPanel/>
-        </Grid>
-      </Grid>
-    </div>
+      </div>
   );
 }
 
